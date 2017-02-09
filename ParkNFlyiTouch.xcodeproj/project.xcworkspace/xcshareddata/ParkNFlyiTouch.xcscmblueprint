@@ -1,0 +1,27 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "d1136430-c636-f348-b4e1-fb4d10741f68++8920",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "d1136430-c636-f348-b4e1-fb4d10741f68++8920" : {
+      "DVTSourceControlWorkingCopyRepositoryBranchesLocationKey" : "ParkNFly-iTouch\/iPhone\/branches",
+      "DVTSourceControlWorkingCopyRepositoryTagsLocationKey" : "ParkNFly-iTouch\/iPhone\/tags",
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "ParkNFly-iTouch\/iPhone\/trunk"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "d1136430-c636-f348-b4e1-fb4d10741f68++8920" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D1ACFC47-FD5B-4F0E-BFC7-D10134D20DBC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "d1136430-c636-f348-b4e1-fb4d10741f68++8920" : "Lax_ParkNFly%20iTouch%20Valet%20App\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ParkNFlyiTouch",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "trunk\/ParkNFlyiTouch.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/mobile-svn.cybage.com\/svn\/Mobile-COE",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d1136430-c636-f348-b4e1-fb4d10741f68++8920"
+    }
+  ]
+}

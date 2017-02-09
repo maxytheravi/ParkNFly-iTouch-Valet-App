@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TimePickerView">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Tws-yH-ter">
+                    <rect key="frame" x="0.0" y="49" width="150" height="201"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="201" id="95F-aU-nY8"/>
+                        <constraint firstAttribute="width" constant="150" id="XBc-Oq-S6R"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="C4n-vO-5SI">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="DKu-Ol-Lem"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="SAX-gx-xQF"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WnZ-rS-fSf">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLQ-R7-LWA">
+                            <rect key="frame" x="38" y="14" width="102" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.020236048847436905" green="0.10914862155914307" blue="0.24928936362266541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="hEu-X4-qbM"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26P-69-ufc">
+                    <rect key="frame" x="143" y="12" width="45" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.96801841259002686" green="0.61378812789916992" blue="0.092698775231838226" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                    <state key="normal" title="DONE">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onDoneTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="vQf-aM-BPJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrB-RY-VCG">
+                    <rect key="frame" x="2" y="10" width="35" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="X">
+                        <color key="titleColor" red="0.57672413789999999" green="0.048168103490000003" blue="0.14859913799999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onCancelTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="ezN-tJ-Y3j"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="50" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="uS3-5p-VZW">
+                    <rect key="frame" x="150" y="50" width="50" height="200"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="y9h-s9-CxG"/>
+                    </constraints>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="UdX-AL-Tcw"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="cic-53-FtF"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WnZ-rS-fSf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2AD-bL-Fyr"/>
+                <constraint firstAttribute="centerY" secondItem="uS3-5p-VZW" secondAttribute="centerY" constant="-25" id="52S-Q3-GFP"/>
+                <constraint firstAttribute="bottom" secondItem="uS3-5p-VZW" secondAttribute="bottom" id="7En-oS-a9F"/>
+                <constraint firstAttribute="trailing" secondItem="uS3-5p-VZW" secondAttribute="trailing" id="IpM-oM-IWW"/>
+                <constraint firstItem="Tws-yH-ter" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="R7Y-O0-j0y"/>
+                <constraint firstAttribute="bottom" secondItem="Tws-yH-ter" secondAttribute="bottom" id="T88-uc-jey"/>
+                <constraint firstItem="uS3-5p-VZW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="XyZ-Ic-TYC"/>
+                <constraint firstAttribute="trailing" secondItem="WnZ-rS-fSf" secondAttribute="trailing" id="lOe-oi-lFb"/>
+                <constraint firstItem="WnZ-rS-fSf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vOS-gL-lOD"/>
+                <constraint firstItem="Tws-yH-ter" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="49" id="ykg-93-Egd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="doneBtn" destination="26P-69-ufc" id="8yj-u5-i0K"/>
+                <outlet property="durationTable" destination="uS3-5p-VZW" id="IaJ-UW-913"/>
+                <outlet property="timeCV" destination="Tws-yH-ter" id="xqu-LH-8wp"/>
+                <outlet property="topView" destination="WnZ-rS-fSf" id="bO9-pK-RuM"/>
+            </connections>
+            <point key="canvasLocation" x="128" y="345"/>
+        </view>
+    </objects>
+</document>

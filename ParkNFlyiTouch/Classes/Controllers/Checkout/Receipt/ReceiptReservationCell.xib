@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReceiptReservationCell" id="KGk-i7-Jjw" customClass="ReceiptReservationCell">
+            <rect key="frame" x="0.0" y="0.0" width="540" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="540" height="29"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVX-ft-mxz" customClass="ReceiptReservationContainer">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="29"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NVX-ft-mxz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HZA-QI-xEH"/>
+                    <constraint firstAttribute="bottom" secondItem="NVX-ft-mxz" secondAttribute="bottom" id="bsc-3k-Shc"/>
+                    <constraint firstAttribute="trailing" secondItem="NVX-ft-mxz" secondAttribute="trailing" id="r4W-8O-GGB"/>
+                    <constraint firstItem="NVX-ft-mxz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rLU-jS-1Y3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="container" destination="NVX-ft-mxz" id="Ll4-kU-jeu"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
